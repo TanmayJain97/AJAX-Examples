@@ -1,6 +1,6 @@
 let XMLHttpRequest = require("xmlHttpRequest").XMLHttpRequest;
 
-function makeAjaxCall(methodType, url, callbackfnc, async = true, data = null){
+function makeAjaxCall(methodType, url, callback, async = true, data = null){
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
         console.log("State Changed Called. Ready State: "+ xhr.readyState+" Status: "+xhr.status);
